@@ -33,7 +33,7 @@
                     "label": "Mermaid (texto)",
                     "type": "TEXT",
                     "concept": "DIMENSION",
-                    "reaggregation": "NONE",
+                    "reaggregation": "NO_REAGGREGATION",
                     "required": false
                   }
                 ]
