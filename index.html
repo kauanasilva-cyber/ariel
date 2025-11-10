@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' https://unpkg.com; 
+                   script-src 'self' https://unpkg.com 'unsafe-eval';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data: https://*;">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mermaid Viz</title>
+  </head>
+  <body>
+    <div id="root" role="img" aria-label="Mermaid diagram"></div>
+    <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/@lookerstudio/visualization@1.0.0/dist/dscc.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

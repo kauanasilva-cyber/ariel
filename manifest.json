@@ -1,0 +1,110 @@
+{
+  "dataStudio": {
+    "name": "Mermaid Diagram",
+    "logoUrl": "https://unpkg.com/simple-icons@latest/icons/mermaid.svg",
+    "organization": "Ecommerce Puro",
+    "description": "Renderiza diagramas Mermaid a partir de um campo de texto ou parâmetro.",
+    "supportUrl": "https://github.com/",
+    "components": [
+      {
+        "name": "Mermaid Diagram",
+        "type": "VISUALIZATION",
+        "id": "mermaid_diagram",
+        "iconUrl": "https://unpkg.com/simple-icons@latest/icons/mermaid.svg",
+        "resource": {
+          "js": [
+            "index.js"
+          ],
+          "css": [
+            "styles.css"
+          ],
+          "html": "index.html"
+        },
+        "options": {
+          "data": {
+            "tables": [
+              {
+                "id": "DEFAULT",
+                "label": "Dados",
+                "columns": [
+                  {
+                    "id": "diagram",
+                    "label": "Mermaid (texto)",
+                    "type": "TEXT",
+                    "concept": "DIMENSION",
+                    "reaggregation": "NONE",
+                    "required": false
+                  }
+                ]
+              }
+            ]
+          },
+          "style": [
+            {
+              "id": "theme",
+              "label": "Tema do Mermaid",
+              "type": "SELECT_SINGLE",
+              "options": [
+                {
+                  "label": "Default",
+                  "value": "default"
+                },
+                {
+                  "label": "Dark",
+                  "value": "dark"
+                },
+                {
+                  "label": "Neutral",
+                  "value": "neutral"
+                },
+                {
+                  "label": "Forest",
+                  "value": "forest"
+                }
+              ],
+              "defaultValue": "default"
+            },
+            {
+              "id": "sourceMode",
+              "label": "Origem do diagrama",
+              "type": "SELECT_SINGLE",
+              "options": [
+                {
+                  "label": "Campo (primeira linha)",
+                  "value": "FIELD"
+                },
+                {
+                  "label": "Parâmetro",
+                  "value": "PARAM"
+                }
+              ],
+              "defaultValue": "FIELD"
+            },
+            {
+              "id": "paramName",
+              "label": "Nome do parâmetro (se usar Parâmetro)",
+              "type": "TEXTINPUT",
+              "placeholder": "ex.: MermaidParam"
+            },
+            {
+              "id": "fontSize",
+              "label": "Tamanho da fonte (px)",
+              "type": "NUMBER",
+              "defaultValue": 14,
+              "min": 10,
+              "max": 28
+            },
+            {
+              "id": "scale",
+              "label": "Escala do diagrama",
+              "type": "NUMBER",
+              "defaultValue": 1.0,
+              "min": 0.5,
+              "max": 3.0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
