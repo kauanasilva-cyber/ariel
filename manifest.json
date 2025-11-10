@@ -5,6 +5,7 @@
     "organization": "Ecommerce Puro",
     "description": "Renderiza diagramas Mermaid a partir de um campo de texto ou parâmetro.",
     "supportUrl": "https://github.com/",
+    "resourceUrl": "https://ariel-self.vercel.app/",
     "components": [
       {
         "name": "Mermaid Diagram",
